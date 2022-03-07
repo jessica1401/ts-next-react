@@ -1,7 +1,14 @@
-import '../styles/globals.css'
+import { createContext } from 'react';
+import '../styles/globals.css';
+const Val = createContext('');
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return <>
+  <Val.Provider value={`abc`}>
+  <Component {...pageProps}></Component>
+  </Val.Provider>
+  </>
 }
 
-export default MyApp
+export default MyApp;
+export {Val}
