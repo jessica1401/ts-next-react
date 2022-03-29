@@ -7,6 +7,7 @@ const NavBar = (props) => {
             <Link href="/images"><a><li>images</li></a></Link>
             <Link href={"/inc-dec"}><a><li>Increment / decrement</li></a></Link>
             <Link href={`/form`}><a><li>React Form Implementation</li></a></Link>
+            <Link href={`/react-hook-form`}><a><li>react-hook-form</li></a></Link>
         </ul>
         </>
     )
